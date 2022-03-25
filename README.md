@@ -29,6 +29,7 @@ Many uses, you can put it in the middle of your program code, etc. It sends the 
 - `Manufacturer`
 - `System Type`
 - `The Current Path`
+- `The Local Timezone`
 
 # Installtion :
 <h4>The Git way :</h4>
