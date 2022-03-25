@@ -5,7 +5,7 @@ from platform import uname
 import os
 import sys
 import time
-import wmi
+import wmi 
 import psutil
 import datetime
 c = wmi.WMI()   
