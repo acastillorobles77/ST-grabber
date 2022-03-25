@@ -7,7 +7,7 @@ import sys
 import time
 import wmi 
 import psutil
-import datetime
+import datetime 
 c = wmi.WMI()   
 my_system = c.Win32_ComputerSystem()[0]
 time2 = time.time()
