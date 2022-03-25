@@ -12,24 +12,32 @@ Many uses, you can put it in the middle of your program code, etc. It sends the 
 
 
 
-# Content
 
-<h4>Grabs The Following Info :</h4>
 
-- `IP`
-- `Hostname, Device`
-- `System`
-- `Node`
-- `Virtual Machine True/False`
-- `Number Of Processors`
-- `Memory`
-- `Model`
-- `Operating System`
-- `User`
-- `Manufacturer`
-- `System Type`
-- `The Current Path`
-- `The Local Timezone`
+
+
+
+# Content :
+
+
+| Grabs The Following Info : |
+| ------------- | 
+| `Public IP` | 
+| `Hostname, Device`  | 
+| `System` | 
+| `Node` | 
+| `Virtual Machine True/False`| 
+| `Number Of Processors` | 
+| `Memory` | 
+| `Model` | 
+| `Operating System` | 
+| `User` | 
+| `Manufacturer`|
+| `System Type`|
+| `The Current Path`|
+| `The Local Timezone`|
+
+
 
 # Installtion :
 <h4>The Git way :</h4>
