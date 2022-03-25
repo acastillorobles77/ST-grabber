@@ -1,3 +1,6 @@
+#author: suegdu
+
+
 from requests import get
 from discord_webhook import DiscordEmbed,DiscordWebhook
 import platform
