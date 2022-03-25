@@ -9,3 +9,7 @@ Many uses, you can put it in the middle of your program code, etc. It sends the 
 ![](https://cdn.discordapp.com/attachments/790231513849266177/956947916164067338/2022-03-25_18_57_47_LI.jpg)
 
 
+
+# Installtion :
+
+```pip install -r requirements.txt```
