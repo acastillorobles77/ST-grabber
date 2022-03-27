@@ -6,7 +6,7 @@ Many uses, you can put it in the middle of your program code, etc. It sends the 
 
 
 # images :
-![](https://cdn.discordapp.com/attachments/914640529776607243/957690639561158747/2022-03-27_20_19_28_LI.jpg)
+![](https://cdn.discordapp.com/attachments/914640529776607243/957697862953762836/2022-03-27_20_47_22_LI.jpg)
 
 
 
@@ -37,6 +37,7 @@ Many uses, you can put it in the middle of your program code, etc. It sends the 
 | `The Current Path`|
 | `The Local Timezone`|
 | `Processor`|
+| `Fake Net Detection`|
 
 
 
