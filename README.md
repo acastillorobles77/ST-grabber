@@ -20,7 +20,7 @@ Many uses, you can put it in the middle of your program code, etc. It sends the 
 # Content :
 
 
-| Grabs The Following Info : |
+| Grabs The Following Content : |
 | ------------- | 
 | `Public IP` | 
 | `Hostname, Device`  | 
