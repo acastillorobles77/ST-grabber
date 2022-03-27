@@ -36,6 +36,7 @@ Many uses, you can put it in the middle of your program code, etc. It sends the 
 | `System Type`|
 | `The Current Path`|
 | `The Local Timezone`|
+| `Processor`|
 
 
 
