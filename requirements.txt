@@ -1,6 +1,4 @@
 psutil
 wmi
-time
-platform
 discord_webhook
 requests
