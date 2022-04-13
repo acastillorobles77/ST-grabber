@@ -75,3 +75,6 @@ Many uses, you can put it in the middle of your program code, etc. It sends the 
 
 3/27/2022
 - platform.processor and Fake net detection has been added  
+
+
+[Discord](https://discord.gg/rydZxy7Qxr)
