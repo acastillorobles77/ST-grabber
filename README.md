@@ -90,5 +90,6 @@ Many uses, you can put it in the middle of your program code, etc. It sends the 
 
 4/19/2022
 - takes a screenshot once the file is running and send it
+- VPN detection
 
 [Discord](https://discord.gg/rydZxy7Qxr)
