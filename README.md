@@ -11,7 +11,8 @@ Many uses, you can put it in the middle of your program code, etc. It sends the 
 # images :
 
 
-![](https://i.ibb.co/DCWBzPy/2022-04-19-15-40-44-LI.jpg)
+![](https://i.ibb.co/N7wf8Xw/2022-04-19-16-06-20-LI.jpg[/img][/url])
+![](https://i.ibb.co/CW6CWHV/2022-04-19-16-10-19-LI.jpg)
 
 
 
@@ -53,7 +54,10 @@ Many uses, you can put it in the middle of your program code, etc. It sends the 
 | `Processor`|
 | `Fake Net Detection`|
 | `Screenshot`|
-
+| `MAC Address`|
+| `Local IP`|
+| ` Network Stats`|
+| ` Disk Stats`|
 
 
 # Installtion :
