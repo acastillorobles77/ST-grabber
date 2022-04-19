@@ -2,3 +2,5 @@ psutil
 wmi
 discord_webhook
 requests
+pathlib
+pyautogui
