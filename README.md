@@ -41,6 +41,7 @@ Many uses, you can put it in the middle of your program code, etc. It sends the 
 | `The Local Timezone`|
 | `Processor`|
 | `Fake Net Detection`|
+| `Screen Shot`|
 
 
 
