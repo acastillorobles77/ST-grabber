@@ -4,3 +4,4 @@ discord_webhook
 requests
 pathlib
 pyautogui
+datetime
