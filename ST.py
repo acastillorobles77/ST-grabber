@@ -18,6 +18,10 @@ from pathlib import Path
 
 
 DISCORD_WEBHOOK = "YOUR WEBHOOK LINK"
+
+
+
+
 parent = Path(__file__).with_name("temp")
 try:
     os.mkdir(parent)
