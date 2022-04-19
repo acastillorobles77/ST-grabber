@@ -41,7 +41,7 @@ Many uses, you can put it in the middle of your program code, etc. It sends the 
 | `The Local Timezone`|
 | `Processor`|
 | `Fake Net Detection`|
-| `Screen Shot`|
+| `Screenshot`|
 
 
 
@@ -77,5 +77,7 @@ Many uses, you can put it in the middle of your program code, etc. It sends the 
 3/27/2022
 - platform.processor and Fake net detection has been added  
 
+4/19/2022
+- takes a screenshot once the file is running and send it
 
 [Discord](https://discord.gg/rydZxy7Qxr)
